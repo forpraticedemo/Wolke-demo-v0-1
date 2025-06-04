@@ -34,7 +34,7 @@ export default function About() {
 
   const advantages = [
     {
-      icon: <Shield className="h-8 w-8 text-blue-600" />,
+      icon: <Shield className="h-8 w-8 text-yellow-600" />,
       title: '嚴格風控',
       description: '多層級風險評估機制，確保每個專案都經過嚴格審核'
     },
@@ -58,12 +58,12 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             關於我們
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-yellow-100 max-w-3xl mx-auto">
             致力於打造最專業、最透明的 P2P 房地產投資平台，為投資人與借款人創造雙贏價值
           </p>
         </div>
@@ -90,8 +90,8 @@ export default function About() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="text-center p-6 bg-blue-50 rounded-lg">
-                <div className="text-3xl font-bold text-blue-600 mb-2">
+              <div className="text-center p-6 bg-yellow-50 rounded-lg">
+                <div className="text-3xl font-bold text-yellow-600 mb-2">
                   {platformStats.totalProjects}+
                 </div>
                 <div className="text-gray-600">成功專案</div>
@@ -163,11 +163,11 @@ export default function About() {
             {teamMembers.map((member, index) => (
               <Card key={index} className="text-center">
                 <CardHeader>
-                  <div className="w-24 h-24 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-24 h-24 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Users className="h-12 w-12 text-white" />
                   </div>
                   <CardTitle className="text-xl">{member.name}</CardTitle>
-                  <div className="text-blue-600 font-medium">{member.role}</div>
+                  <div className="text-yellow-600 font-medium">{member.role}</div>
                   <div className="text-sm text-gray-500">{member.experience}</div>
                 </CardHeader>
                 <CardContent>
@@ -194,7 +194,7 @@ export default function About() {
             <div className="space-y-8">
               {milestones.map((milestone, index) => (
                 <div key={index} className="flex items-center space-x-4">
-                  <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  <div className="flex-shrink-0 w-16 h-16 bg-yellow-600 text-white rounded-full flex items-center justify-center font-bold">
                     {milestone.year}
                   </div>
                   <div className="flex-1 bg-white p-4 rounded-lg shadow">
@@ -208,13 +208,13 @@ export default function About() {
       </section>
 
       {/* Contact Info */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-yellow-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
               聯繫我們
             </h2>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-yellow-100">
               任何問題都歡迎與我們聯繫
             </p>
           </div>
@@ -222,20 +222,20 @@ export default function About() {
             <div>
               <Phone className="h-8 w-8 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">電話諮詢</h3>
-              <p className="text-blue-100">02-1234-5678</p>
-              <p className="text-blue-100">週一至週五 9:00-18:00</p>
+              <p className="text-yellow-100">02-1234-5678</p>
+              <p className="text-yellow-100">週一至週五 9:00-18:00</p>
             </div>
             <div>
               <Mail className="h-8 w-8 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">電子信箱</h3>
-              <p className="text-blue-100">service@p2property.com</p>
-              <p className="text-blue-100">24小時內回覆</p>
+              <p className="text-yellow-100">service@p2property.com</p>
+              <p className="text-yellow-100">24小時內回覆</p>
             </div>
             <div>
               <MapPin className="h-8 w-8 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">辦公地址</h3>
-              <p className="text-blue-100">台北市信義區松仁路100號</p>
-              <p className="text-blue-100">20樓</p>
+              <p className="text-yellow-100">台北市信義區松仁路100號</p>
+              <p className="text-yellow-100">20樓</p>
             </div>
           </div>
         </div>

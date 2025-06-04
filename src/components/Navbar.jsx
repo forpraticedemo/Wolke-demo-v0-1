@@ -32,7 +32,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Building2 className="h-8 w-8 text-blue-600" />
+            <Building2 className="h-8 w-8 text-yellow-600" />
             <span className="text-xl font-bold text-gray-900">房投平台</span>
           </Link>
 
@@ -44,8 +44,8 @@ export default function Navbar() {
                 to={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === item.href
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                    ? 'text-yellow-600 bg-yellow-50'
+                    : 'text-gray-700 hover:text-yellow-600 hover:bg-gray-50'
                 }`}
               >
                 {item.name}
@@ -107,8 +107,8 @@ export default function Navbar() {
                   to={item.href}
                   className={`block px-3 py-2 rounded-md text-base font-medium ${
                     location.pathname === item.href
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                      ? 'text-yellow-600 bg-yellow-50'
+                      : 'text-gray-700 hover:text-yellow-600 hover:bg-gray-50'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >

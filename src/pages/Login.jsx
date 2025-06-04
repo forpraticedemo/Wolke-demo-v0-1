@@ -31,7 +31,7 @@ export default function Login() {
       description: '存取完整的房地產投資專案，享受多元化投資選擇'
     },
     {
-      icon: <Shield className="h-8 w-8 text-blue-600" />,
+      icon: <Shield className="h-8 w-8 text-yellow-600" />,
       title: '專業風險評估',
       description: '查看詳細的財務資料和風險分析報告'
     },
@@ -82,12 +82,12 @@ export default function Login() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             開始您的投資之旅
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-8">
+          <p className="text-xl md:text-2xl text-yellow-100 mb-8">
             註冊成為會員，解鎖完整的投資功能和專案資訊
           </p>
         </div>
@@ -146,9 +146,9 @@ export default function Login() {
 
                 <div className="text-xs text-gray-500 text-center">
                   登入即表示您同意我們的
-                  <a href="#" className="text-blue-600 hover:underline">服務條款</a>
+                  <a href="#" className="text-yellow-600 hover:underline">服務條款</a>
                   和
-                  <a href="#" className="text-blue-600 hover:underline">隱私政策</a>
+                  <a href="#" className="text-yellow-600 hover:underline">隱私政策</a>
                 </div>
               </CardContent>
             </Card>
@@ -218,7 +218,7 @@ export default function Login() {
               <div className="space-y-4">
                 {steps.map((step, index) => (
                   <div key={index} className="flex items-center space-x-4">
-                    <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                    <div className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
                       {step.step}
                     </div>
                     <div className="flex-1">

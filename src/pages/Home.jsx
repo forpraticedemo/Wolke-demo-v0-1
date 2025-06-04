@@ -7,7 +7,7 @@ import { platformStats, mockProperties } from '../data/mockData';
 export default function Home() {
   const features = [
     {
-      icon: <TrendingUp className="h-12 w-12 text-blue-600" />,
+      icon: <TrendingUp className="h-12 w-12 text-yellow-600" />,
       title: '穩定收益',
       description: '年化報酬率平均 8.3%，為您的資金創造穩定收益'
     },
@@ -28,23 +28,23 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               P2P 房地產投資平台
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-yellow-100">
               連接投資人與優質房地產專案，創造雙贏投資機會
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button asChild size="lg" className="bg-white text-yellow-600 hover:bg-gray-100">
                 <Link to="/properties">
                   探索投資機會
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-yellow-600">
                 <Link to="/calculator">投資計算器</Link>
               </Button>
             </div>
@@ -57,7 +57,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">
+              <div className="text-3xl md:text-4xl font-bold text-yellow-600 mb-2">
                 {platformStats.totalProjects}+
               </div>
               <div className="text-gray-600">專案總數</div>
@@ -136,7 +136,7 @@ export default function Home() {
                     <span>{property.public.area}</span>
                     <span className={`px-2 py-1 rounded text-xs ${
                       property.public.status === '募集中' ? 'bg-green-100 text-green-800' :
-                      property.public.status === '進行中' ? 'bg-blue-100 text-blue-800' :
+                      property.public.status === '進行中' ? 'bg-yellow-100 text-yellow-800' :
                       'bg-gray-100 text-gray-800'
                     }`}>
                       {property.public.status}
@@ -160,7 +160,7 @@ export default function Home() {
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
                     <div 
-                      className="bg-blue-600 h-2 rounded-full" 
+                      className="bg-yellow-500 h-2 rounded-full" 
                       style={{ width: `${(property.public.currentAmount / property.public.targetAmount) * 100}%` }}
                     ></div>
                   </div>
@@ -187,20 +187,20 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-yellow-500 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             準備開始投資了嗎？
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-yellow-100">
             聯繫我們的專業團隊，獲得個人化投資建議
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-yellow-600 hover:bg-gray-100">
               <Phone className="mr-2 h-5 w-5" />
               電話諮詢
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-yellow-600">
               <MessageCircle className="mr-2 h-5 w-5" />
               LINE 諮詢
             </Button>

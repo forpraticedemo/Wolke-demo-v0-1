@@ -64,7 +64,7 @@ export default function CalculatorPage() {
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">
-            <Calculator className="h-12 w-12 text-blue-600" />
+            <Calculator className="h-12 w-12 text-yellow-600" />
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             投資收益計算器
@@ -92,7 +92,7 @@ export default function CalculatorPage() {
                   type="number"
                   value={amount}
                   onChange={(e) => setAmount(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                   placeholder="請輸入投資金額"
                   min="10000"
                   step="10000"
@@ -108,7 +108,7 @@ export default function CalculatorPage() {
                   type="number"
                   value={rate}
                   onChange={(e) => setRate(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                   placeholder="請輸入年化報酬率"
                   min="0"
                   max="20"
@@ -125,7 +125,7 @@ export default function CalculatorPage() {
                   type="number"
                   value={duration}
                   onChange={(e) => setDuration(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                   placeholder="請輸入投資期限"
                   min="1"
                   max="120"
@@ -140,7 +140,7 @@ export default function CalculatorPage() {
                 <select
                   value={compoundFrequency}
                   onChange={(e) => setCompoundFrequency(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 >
                   {compoundFrequencyOptions.map(option => (
                     <option key={option.value} value={option.value}>
@@ -169,9 +169,9 @@ export default function CalculatorPage() {
               {results ? (
                 <div className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-blue-50 p-4 rounded-lg">
+                    <div className="bg-yellow-50 p-4 rounded-lg">
                       <div className="text-sm text-gray-600">初始投資</div>
-                      <div className="text-2xl font-bold text-blue-600">
+                      <div className="text-2xl font-bold text-yellow-600">
                         ${results.principal.toLocaleString()}
                       </div>
                     </div>

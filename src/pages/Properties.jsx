@@ -41,10 +41,10 @@ export default function Properties() {
           </p>
           
           {/* User Permission Notice */}
-          <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+          <div className="mt-4 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
             <div className="flex items-center space-x-2">
               {currentUser.permissions.viewPrivateInfo ? (
-                <Eye className="h-5 w-5 text-blue-600" />
+                <Eye className="h-5 w-5 text-yellow-600" />
               ) : (
                 <EyeOff className="h-5 w-5 text-gray-500" />
               )}
@@ -71,7 +71,7 @@ export default function Properties() {
               <select
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
               >
                 <option value="all">全部類型</option>
                 <option value="住宅">住宅建設</option>
@@ -86,7 +86,7 @@ export default function Properties() {
               <select
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
               >
                 <option value="all">全部狀態</option>
                 <option value="募集中">募集中</option>
@@ -123,7 +123,7 @@ export default function Properties() {
                     <CardTitle className="text-lg">{property.public.title}</CardTitle>
                     <span className={`px-2 py-1 rounded text-xs font-medium ${
                       property.public.status === '募集中' ? 'bg-green-100 text-green-800' :
-                      property.public.status === '進行中' ? 'bg-blue-100 text-blue-800' :
+                      property.public.status === '進行中' ? 'bg-yellow-100 text-yellow-800' :
                       'bg-gray-100 text-gray-800'
                     }`}>
                       {property.public.status}
@@ -178,7 +178,7 @@ export default function Properties() {
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div 
-                        className="bg-blue-600 h-2 rounded-full transition-all duration-300" 
+                        className="bg-yellow-500 h-2 rounded-full transition-all duration-300" 
                         style={{ width: `${Math.min(progressPercentage, 100)}%` }}
                       ></div>
                     </div>

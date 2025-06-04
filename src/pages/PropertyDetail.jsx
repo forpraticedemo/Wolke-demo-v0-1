@@ -80,7 +80,7 @@ export default function PropertyDetail() {
                 </div>
                 <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                   property.status === '募集中' ? 'bg-green-100 text-green-800' :
-                  property.status === '進行中' ? 'bg-blue-100 text-blue-800' :
+                  property.status === '進行中' ? 'bg-yellow-100 text-yellow-800' :
                   'bg-gray-100 text-gray-800'
                 }`}>
                   {property.status}
@@ -92,7 +92,7 @@ export default function PropertyDetail() {
             <div className="bg-white p-4 rounded-lg shadow-sm border">
               <div className="flex items-center space-x-2">
                 {currentUser.permissions.viewPrivateInfo ? (
-                  <Eye className="h-5 w-5 text-blue-600" />
+                  <Eye className="h-5 w-5 text-yellow-600" />
                 ) : (
                   <EyeOff className="h-5 w-5 text-gray-500" />
                 )}
@@ -290,7 +290,7 @@ export default function PropertyDetail() {
                       <div className="space-y-3">
                         {property.legalDocuments.map((doc, index) => (
                           <div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded">
-                            <FileText className="h-5 w-5 text-blue-600" />
+                            <FileText className="h-5 w-5 text-yellow-600" />
                             <span className="flex-1">{doc}</span>
                             <Button variant="outline" size="sm">下載</Button>
                           </div>
@@ -355,7 +355,7 @@ export default function PropertyDetail() {
                     type="number"
                     value={investmentAmount}
                     onChange={(e) => setInvestmentAmount(Number(e.target.value))}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                     min={property.minInvestment}
                     step="10000"
                   />
@@ -364,7 +364,7 @@ export default function PropertyDetail() {
                   </p>
                 </div>
 
-                <div className="bg-blue-50 p-3 rounded">
+                <div className="bg-yellow-50 p-3 rounded">
                   <div className="text-sm space-y-1">
                     <div className="flex justify-between">
                       <span className="text-gray-600">預期總收益</span>
@@ -408,7 +408,7 @@ export default function PropertyDetail() {
                 <div className="space-y-3">
                   <div className="w-full bg-gray-200 rounded-full h-3">
                     <div 
-                      className="bg-blue-600 h-3 rounded-full transition-all duration-300" 
+                      className="bg-yellow-500 h-3 rounded-full transition-all duration-300" 
                       style={{ width: `${Math.min(progressPercentage, 100)}%` }}
                     ></div>
                   </div>
@@ -420,7 +420,7 @@ export default function PropertyDetail() {
                   </div>
                   <div className="grid grid-cols-2 gap-4 text-center text-sm">
                     <div>
-                      <div className="font-semibold text-lg text-blue-600">
+                      <div className="font-semibold text-lg text-yellow-600">
                         ${property.currentAmount.toLocaleString()}
                       </div>
                       <div className="text-gray-600">已募集</div>
@@ -452,7 +452,7 @@ export default function PropertyDetail() {
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
-                      <Calendar className="h-4 w-4 text-blue-600" />
+                      <Calendar className="h-4 w-4 text-yellow-600" />
                       <span className="text-sm">投資期限</span>
                     </div>
                     <span className="font-semibold">{property.duration} 個月</span>

@@ -31,7 +31,7 @@ export default function Contact() {
 
   const contactMethods = [
     {
-      icon: <Phone className="h-6 w-6 text-blue-600" />,
+      icon: <Phone className="h-6 w-6 text-yellow-600" />,
       title: '電話諮詢',
       description: '專業投資顧問為您服務',
       contact: '02-1234-5678',
@@ -183,7 +183,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                         placeholder="請輸入您的姓名"
                       />
                     </div>
@@ -196,7 +196,7 @@ export default function Contact() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                         placeholder="請輸入您的電話"
                       />
                     </div>
@@ -212,7 +212,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                       placeholder="請輸入您的電子信箱"
                     />
                   </div>
@@ -226,7 +226,7 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                     >
                       <option value="">請選擇問題類型</option>
                       <option value="投資諮詢">投資諮詢</option>
@@ -288,7 +288,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       rows={5}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                       placeholder="請詳細描述您的問題..."
                     ></textarea>
                   </div>

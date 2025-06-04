@@ -65,7 +65,7 @@ export default function Dashboard() {
         {/* Header */}
         <div className="mb-8">
           <div className="flex items-center space-x-3 mb-4">
-            <User className="h-8 w-8 text-blue-600" />
+            <User className="h-8 w-8 text-yellow-600" />
             <div>
               <h1 className="text-3xl font-bold text-gray-900">
                 歡迎回來，{currentUser.name}
@@ -78,7 +78,7 @@ export default function Dashboard() {
           </div>
           
           {/* Permission Status */}
-          <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
+          <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-yellow-500">
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="font-medium text-gray-900">帳戶狀態</h3>
@@ -188,9 +188,9 @@ export default function Dashboard() {
                           <span className="text-sm text-gray-600">已實現收益</span>
                           <span className="font-medium text-green-600">+${investmentStats.currentReturn.toLocaleString()}</span>
                         </div>
-                        <div className="flex justify-between items-center p-3 bg-blue-50 rounded">
+                        <div className="flex justify-between items-center p-3 bg-yellow-50 rounded">
                           <span className="text-sm text-gray-600">當前總價值</span>
-                          <span className="font-medium text-blue-600">${currentValue.toLocaleString()}</span>
+                          <span className="font-medium text-yellow-600">${currentValue.toLocaleString()}</span>
                         </div>
                         <div className="flex justify-between items-center p-3 bg-purple-50 rounded">
                           <span className="text-sm text-gray-600">整體報酬率</span>
@@ -211,7 +211,7 @@ export default function Dashboard() {
                           const property = mockProperties.find(p => p.id === investment.propertyId);
                           return (
                             <div key={investment.id} className="flex items-center space-x-3 p-3 bg-gray-50 rounded">
-                              <Building2 className="h-8 w-8 text-blue-600" />
+                              <Building2 className="h-8 w-8 text-yellow-600" />
                               <div className="flex-1">
                                 <div className="font-medium text-sm">
                                   {property?.public.title || '專案'}
@@ -255,7 +255,7 @@ export default function Dashboard() {
                                 <p className="text-sm text-gray-600">{property?.public.area}</p>
                               </div>
                               <span className={`px-2 py-1 rounded text-xs ${
-                                investment.status === '進行中' ? 'bg-blue-100 text-blue-800' :
+                                investment.status === '進行中' ? 'bg-yellow-100 text-yellow-800' :
                                 investment.status === '已完成' ? 'bg-green-100 text-green-800' :
                                 'bg-gray-100 text-gray-800'
                               }`}>

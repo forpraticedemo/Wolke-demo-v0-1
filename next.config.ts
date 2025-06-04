@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
     unoptimized: true
   },
   // 如果你的 GitHub Pages 不是在根域名，需要設定 basePath
-  basePath: '/demo-v0-1',
-  assetPrefix: '/demo-v0-1/',
+  basePath: '/Wolke-demo-v0-1',
+  assetPrefix: '/Wolke-demo-v0-1/',
 };
 
 export default nextConfig;
